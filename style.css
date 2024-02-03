@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-marron: #160c05;
+  --color-rojo: #f73243 ;
+  --color-dorado: #905c40;
+}
+
+header {
+  height: 75px; 
+  margin: 0px;
+  background-color: var(--color-marron);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar li {
+  font-size: 15px; /* Ajusta esto para cambiar el tamaño de la fuente */
+   /* Esto hará que el texto sea negrita */
+  color: white;
+  font-family: Georgia;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#book {
+  width: 300px; /* Tamaño del libro cerrado (300px por defecto) */
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: width 0.5s; /* Agregamos una transición para suavizar el cambio de tamaño */
+  margin: 20px;
+}
+
+#logo {
+  height: 40px; /* Ajusta esto según el tamaño que desees para el logotipo */
+  width: auto; /* Esto mantendrá la proporción de la imagen */
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Ajusta esto para cambiar la separación entre los elementos de la lista */
+}
+
+.button {
+  width: 75px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#cover {
+  width: 100%; /* Cubre toda la página del libro cerrado */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.pages {
+  width: 100%;
+  display: none; /* Ocultar las páginas por defecto */
+}
+
+.page {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#buttons {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  position: absolute;
+  flex-direction: row-reverse;
+  z-index: 2;
+}
+
+#section{
+  height: 300px;
+}
+
+footer{
+  background-color: var(--color-marron);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Hanken', sans-serif;
+  font-size: 20px;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título del cuento */
+section h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Estilos para las secciones de texto */
+section h2 {
+  color: #333;
+}
+
+/* Estilos para los párrafos */
+section p {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Estilos para el botón */
+section button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+section button:hover {
+  background-color: #555;
+}
+
+/* Estilos para las imágenes */
+section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Estilos para la galería de imágenes */
+section div img {
+  max-width: 48%;
+  margin: 0 1% 15px;
+}
+
+/* Estilos para la llamada a la acción */
+section h2 {
+  text-align: center;
+  color: #333;
+}
+
+section a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+/* Estilos para el enlace del botón de acción */
+section a button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+section a button:hover {
+  background-color: #555;
+}
+
+.slick-carousel div {
+  width: 100%; /* Asegúrate de que los elementos del carrusel tengan un ancho definido */
+}
